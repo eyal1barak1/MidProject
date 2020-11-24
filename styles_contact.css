@@ -99,10 +99,7 @@ div > a:hover{
   padding-top: 3px;
 }
 
-.input_sapce{
-  
-  background: url(/images/search_input.png) no-repeat 0 0;
-}
+
 
 .images_section{
     width: 100%;
@@ -142,10 +139,7 @@ div > a:hover{
   margin-left: 5px;
   margin-right: 5px;
   top: 0;
-  left: 0;
-  
-  /* background: url(/images/1908364606615453350.JPG) no-repeat 0 0; */
-  
+  left: 0;  
 }
 
 
@@ -155,9 +149,7 @@ div > a:hover{
   right: 2%;
   left: 20px;
   font-size: 12px;
-  /* left: 0; */
   direction: rtl;
-  
   height: 90px;
   width: 90%;
   text-align: right; 
@@ -254,9 +246,9 @@ ul > li {
 /* ==============Second Row ============*/
 .contact_section{
   display: flex;
-
+  
   direction: rtl;
-  margin: 0 auto;
+  margin: 0 15%;
   /* align-items  : center; */
   
   height: 80vh;
@@ -291,15 +283,17 @@ ul > li {
 }
 
 
+
 .side_menu > nav{
-  background-color: #bbb;
-  border-radius: 1%;
+  background-image: linear-gradient(#fff, #ccc);
+  border-radius: 5%;
 }
 
 .side_menu > nav > ul{
   list-style: none;
   padding: 0;
-  justify-content: right;
+  
+
   
 }
 
@@ -311,26 +305,38 @@ ul > li {
 .side_menu > nav > ul > li > a {
   color:#333;
   text-decoration: none;
-  padding: 10px;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: block;
   width: 130px;
   font-weight:normal;
+  
 }
 
-/* .side_menu > nav > ul > li > a:hover {
-  background-color: #444;
-  color: white;
-} */
+.side_menu > nav > ul > li > a:hover {
+  
+  color: blue;
+  text-decoration: underline;
+}
 
 .active{
 
   font-size: 16px;
-
+  padding:0;
   
 }
-.side_menu > nav > ul > li  > a::before {
-  /* "\ao " is a non-breaking space */
-  content: "\a0 ›";
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  
+  border-right:10px solid blue; 
+  float: right;
+  margin-top: 7px;
+
 }
 
 
@@ -381,6 +387,7 @@ ul > li {
 .details{
   width: 60%;
   padding-left: 10%;
+  /* margin-right: 1%; */
 }
 
 .contact_form{
