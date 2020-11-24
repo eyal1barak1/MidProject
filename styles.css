@@ -122,9 +122,11 @@ nav > a > img#paz_logo{
       justify-content: center;
 
       margin-top: 20px;
-      margin-bottom: 20px;
+      
 
   }
+
+
 
   .firstimg {
     position: relative;
@@ -149,23 +151,48 @@ nav > a > img#paz_logo{
 
 .iner_article{
     position: relative;
-    top: 0;
-    left: 0;
+    bottom: 25%;
+    right: 2%;
+    left: 20px;
+    font-size: 12px;
+    /* left: 0; */
+    direction: rtl;
+    
+    height: 90px;
+    width: 90%;
+    text-align: right; 
+    background: url(/images/hp_tab_text_bg.png) no-repeat 0 0;
+    background-size: 300px 100px;
 }
 
+
+
+
+
 .iner_article > div{
-    position: absolute;
+
   color: white;
 }
 
 .iner_content{
+    position: absolute;
+    top:0;
     right: 0;
+    width: fit-content;
+    font-weight:normal;
 }
 
 .iner_link{
-    bottom: 5px;
-    left: 5px;
-    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    text-decoration: underline;
+ 
+}
+
+.iner_link > a{
+    background: url(/images/read_more_white.png) no-repeat 0 0;
+
 }
 
 
@@ -175,14 +202,7 @@ nav > a > img#paz_logo{
     color: black;
   }
   
-  /* Style the footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    border: solid black;
-    color: white;
-  }
+
   
  
   ul {
@@ -225,4 +245,127 @@ nav > a > img#paz_logo{
     background-color: #bbb;
     color: blue; 
     text-decoration:underline; 
+}
+
+
+
+
+
+/* ==============Second Row ============*/
+
+/**First element**/
+.second-row{
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    
+    justify-content: center;   
+    
+    margin-bottom: 10%;
+
+}
+
+.gallery2{
+    position: relative;
+    
+    /* border: solid black; */
+    padding-left: 40px;
+    /* padding-top: 80px; */
+}
+
+.firstimg2{
+    position: absolute;
+    z-index: -1;
+}
+
+.head2{
+    /* position: absolute; */
+    font-size: 14px;
+    margin-right: 30px;
+    margin-top: 5%;
+    color: #555;
+}
+
+.img2{
+    /* position: absolute; */
+    margin-top: 10%;
+    margin-right: 10px;
+}
+
+.iner_link2 > a :hover{
+    color: blue;  
+    text-decoration: none; 
+     
+}
+
+
+
+.iner_link2{
+    margin-top: 5%;
+
+    margin-right: 62%;
+}
+
+.iner_link2 > a > span{
+    color:#999;
+    font-weight:normal;
+    font-size: 13px;
+
+    text-decoration:underline; 
+}
+
+
+/**Third element**/
+
+.links{
+  
+  margin-right: 0;
+  width: 100px;
+  margin-top: 10%;
+  margin-right: 5%;
+  
+}
+.iner23{
+  display: flex;
+  justify-content: space-between;
+
+  width: 280px;
+}
+.iner_link23{
+  margin-top: 5%;
+
+  margin-right: 10%;
+}
+.iner_link23 > a > span{
+  color:#999;
+  font-weight:normal;
+  font-size: 13px;
+
+  text-decoration:underline; 
+}
+
+.iner_link23 > a :hover{
+  color: blue;  
+  text-decoration: none; 
+   
+}
+
+
+
+/* ===========Footer Section============= */
+footer {
+  /* background: url(/images/footer_bg.png) no-repeat 0 0; */
+  background-color: #777;
+  padding: 10px;
+  justify-content: center;
+
+  color: white;
+  display: flex;
+  direction: rtl;
+}
+
+.footer_sep
+{
+  margin-right: 10px;
+  margin-left: 10px;
 }
