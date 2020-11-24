@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>פז - עמוד הבית שלי</title>
+    <title>פז - צור קשר</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles_contact.css">
+    <script src="script_contact.js"></script>
 
 </head>
 
-<body onload = "startTimer()">
+<body>
 
 
 
@@ -180,141 +180,92 @@
         </nav>
         </div>
         </div>
-        <div class="images_section">
-            <div class="first-row">
 
-                <div class="gallery">
-                    <a target="_blank" href="images/pazkar.jpg">
-                        <img class="firstimg" src="images/pazkar.jpg" alt="פזקר">
-                        <img class="secondimg" src="images/hp_tab_overlay.png" alt="tab_overlay">
 
-                        <div class="iner_article">
+        <!-- Contact section -->
+        <div class="contact_section">
+            <!-- First Column -->
+            <div class="side_menu">
+                <nav>
 
-                            <div class="iner_content">
-                                <h2>תעשיות ושירותים</h2>
-                                תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור
-                                ושיווק מוצרי לוואי של נפט, ומובילות את השוק...
-                            </div>
-                            <div class="iner_link"><a href="#">
-                                    <span>קרא עוד</span>
-                                    <img alt="read" src="images/read_more_white.png">
-                                </a></div>
+                    <ul>
+                        <li><a class="active" href="paz_contact.html">צור קשר</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-                        </div>
-                    </a>
-
+            <!-- Second Column -->
+            <div class="details">
+                <div id="breadcrumbs" class="fc">
+                    <a class="treelink" href="paz_main.html">עמוד הבית</a>
+                    <span class="treeseparator"> &gt; </span>
+                    <span class="treetext">צור קשר</span>
                 </div>
-                <div class="gallery">
-                    <a target="_blank" href="images/Picture-046410251500.jpg">
-                        <img class="firstimg" src="images/Picture-046410251500.jpg" alt="industry">
-                        <img class="secondimg" src="images/hp_tab_overlay.png" alt="tab_overlay">
-                        <div class="iner_article">
+                <h1 class="details_header">צור קשר</h1>
+                <div class="contact_form">
+                    <h2 class="header">צור קשר</h2>
+                    <p class="caption">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
+                    <span class="instructions">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
 
-                            <div class="iner_content">
-                                <h2>זיקוק</h2>
-                                פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית
-                                הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...
-                            </div>
-                            <div class="iner_link"><a href="#">
-                                    <span>קרא עוד</span>
-                                    <img alt="read" src="images/read_more_white.png">
-                                </a></div>
 
+                    <form id="my-form">
+
+                        <div>
+                            <label for="fname">* שם פרטי</label>
+                            <input name="fname" id="fname" type="text" required>
+                            <span class="error">נדרש להזין שם משפחה</span>
                         </div>
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="images/1908364606615453350.JPG">
-                        <img class="firstimg" src="images/1908364606615453350.JPG" alt="gas_station">
-                        <img class="secondimg" src="images/hp_tab_overlay.png" alt="tab_overlay">
-                        <div class="iner_article">
-
-                            <div class="iner_content">
-                                <h2>קמעונאות ומסחר</h2>
-                                במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה,
-                                שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...
-                            </div>
-                            <div class="iner_link">
-
-                                <a href="#">
-                                    <span>קרא עוד</span>
-                                    <img alt="read" src="images/read_more_white.png">
-                                </a>
-                            </div>
-
+                        <div>
+                            <label for="lname">* שם משפחה</label>
+                            <input id="lname" type="text" maxlength="10">
                         </div>
-                    </a>
+                        <div>
+                            <label for="id">* מספר טלפון</label>
+                            <input id="id" type="text" pattern="[0-9]{10}" required>
+                            <span class="error">מספר טלפון מורכב מ 10 ספרות</span>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email">
+                        </div>
+                        <div>
+                            <textarea placeholder="תוכן הפניה" rows="7" cols="30"></textarea>
+                        </div>
 
+
+                        <button type="button" onclick="sendForm()">שלח</button>
+
+
+                        <!-- <input type="button" value="OK"> -->
+                    </form>
                 </div>
             </div>
-            <div class="second-row">
 
-                 <!-- First element -->
-                <div class="gallery2">
-                    <img class="firstimg2" src="images/small_cube_bg.png" alt="פזקר">
-                    <h3 class="head2">כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                    <img class="img2" src="/images/paz_250x110059890678.jpg" id="paz"
-                        alt="כרטיס אשראי שופרסל וכרטיס אשראי יש">
-                    <div class="iner_link2">
-                        <a href="#">
-                            <span> לפרטים נוספים</span>
-                            <img alt="read" src="images/read_more_yellow.png">
-                        </a>
+            <!-- Third Column -->
+            <div class="info">
+                <div class="info_text">
+                    <h3 class="info_header">פרטי יצירת קשר</h3>
+                    <div class="info_content">
+                        <h2 class="first_line">פז חברת נפט בע"מ</h2>
+                        <p>יורו פארק, בניין הולנד</p>
+                        <p> קיבוץ יקום 60972</p>
+                        <p>טל. שירות לקוחות 1-800-774-774</p>
+                        <p> פקס.09-8641714</p>
                     </div>
                 </div>
-                 <!-- Second element -->
-                <div class="gallery2">
-                    <img class="firstimg2" src="images/small_cube_bg.png" alt="פזקר">
-                    <h3 id="head2_id" class="head2">שטחי מסחר פז סנטר</h3>
-                    <img id="img2_id"class="img2" src="/images/paz_250x110103131473.jpg">
-                    <div id="iner_link2_id"class="iner_link2">
-                        <a href="#">
-                            <span> לפרטים נוספים</span>
-                            <img alt="read" src="images/read_more_yellow.png">
-                        </a>
+                <div class="info_text">
+                    <h3 class="info_header">עוד בפז</h3>
+                    <div class="info_content">
+                        <h2 class="first_line">ליצירת קשר עם דוברות פז</h2>
+                        <a class="info_link" target="#" href="">לחצו כאן >></a>
+                        <h2 class="first_line">רוצים לעבוד בפז?</h2>
+                        <a class="info_link" target="#" href="">לחצו כאן >></a>
                     </div>
-                </div>
-
-                <!-- Third element -->
-
-
-
-                <div class="gallery2">
-                    <img class="firstimg2" src="images/small_cube_bg.png" alt="פזקר">
-                    <h3 class="head2">התחנות שלנו בדרך שלך</h3>
-                    <div class="iner23">
-                        <div class="links">
-                            <div class="iner_link23">
-                                <a href="#">
-                                    <span> צפון </span>
-                                    <img alt="read" src="images/read_more_yellow.png">
-                                </a>
-                            </div>
-                            <div class="iner_link23">
-                                <a href="#">
-                                    <span> מרכז </span>
-                                    <img alt="read" src="images/read_more_yellow.png">
-                                </a>
-                            </div>
-                            <div class="iner_link23">
-                                <a href="#">
-                                    <span> דרום </span>
-                                    <img alt="read" src="images/read_more_yellow.png">
-                                </a>
-                            </div>
-                        </div>
-                        <img class="img23" src="/images/map-transparent.png" id="map"
-                            alt="כרטיס אשראי שופרסל וכרטיס אשראי יש">
-                    </div>
-
                 </div>
             </div>
         </div>
         </div>
 
-       
 
 
         </div>
@@ -343,7 +294,7 @@
         <div class="footer_sep">|</div>
         <a target="#" href="">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a>
         <div class="footer_sep">|</div>
-        
+
 
     </footer>
 
